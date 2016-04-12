@@ -27,7 +27,7 @@ Sometimes we would like the parser to act a little more fuzzy, so we do:
 
 Let's do this more elegantly and make it reusable. Instead of extending all enums with a `String` raw value (which, to my knowledge, it currently not possible in Swift), we can make our enums with `String` raw values conform to a type like:
 
-    public protocol StringEnumType: CustomStringConvertible {
+    public protocol StringEnumType {
         var rawValue: String { get }
         init?(rawValue: String)
     }

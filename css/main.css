@@ -3,19 +3,22 @@
  */
 
 body {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     margin: 40px auto;
     width: 50%;
 }
 
 h1 {
-    font-weight: lighter;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 200;
     line-height: 1.5em;
     margin-bottom: 40px;
     margin-top: 40px;
 }
 
 h2 {
-    font-weight: lighter;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 200;
     margin-top: 40px;
 }
 
@@ -48,6 +51,7 @@ pre, code, kbd, samp, tt {
 
 nav ul, footer ul {
     display: inline-block;
+    font-size: 1.2em;
     padding: 0px;
     list-style: none;
 }
@@ -67,7 +71,6 @@ nav {
 }
 
 nav ul {
-
     width: 50%;
     white-space: nowrap;
 }
@@ -124,7 +127,7 @@ div.post ul li {
 }
 
 div.post pre code {
-    background-color: #fdf2fd;
+    background-color: #fcfcfc;
     display: block;
     line-height: 1.4em;
     margin: auto -10px;

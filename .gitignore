@@ -1,2 +1,8 @@
+# macOS Spotlight index
 .DS_Store
+
+# RubyGem Bundler default local folder
+vendor/
+
+# Jekyll generated files
 _site/

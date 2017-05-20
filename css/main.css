@@ -156,7 +156,7 @@ div.post pre code {
     display: block;
     font-size: 0.95em;
     line-height: 1.4em;
-    margin: auto -10px;
+    margin: 20px -10px;
     overflow: scroll;
     padding: 10px;
 }

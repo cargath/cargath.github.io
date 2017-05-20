@@ -34,16 +34,6 @@ h2 {
     margin-top: 40px;
 }
 
-@media screen and (max-width: 800px) {
-    h1 {
-        font-size: 150%;
-    }
-
-    h2 {
-        font-size: 120%;
-    }
-}
-
 a {
     color: #A157E8;
     text-decoration: none;
@@ -145,7 +135,7 @@ footer ul.by li {
  */
 
 ul.posts {
-    margin: -25px 0;
+    margin: -28px 0;
     padding: 0;
 }
 
@@ -153,16 +143,17 @@ ul.posts li {
     list-style: none;
 }
 
-ul.posts li p.meta {
+ul.posts li p {
     color: #999;
-    margin: 0;
+    margin: 10px auto;
 }
 
 ul.posts a {
+    color: #333;
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-weight: 200;
-    font-size: 1.5em;
-    color: #333;
+    font-size: 150%;
+    line-height: 1.5em;
 }
 
 ul.posts a:hover {
@@ -217,4 +208,22 @@ div.pagination {
     text-align: center;
     margin-top: -20px;
     margin-bottom: -20px;
+}
+
+/*
+    Smaller devices
+ */
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 150%;
+    }
+
+    h2 {
+        font-size: 120%;
+    }
+
+    ul.posts a {
+        font-size: 120%;
+    }
 }

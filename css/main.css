@@ -71,9 +71,12 @@ nav {
     margin-bottom: 40px;
 }
 
-nav ul {
-    width: 50%;
-    white-space: nowrap;
+nav ul#nav {
+    width: 66%;
+}
+
+nav ul#ava {
+    width: 34%;
 }
 
 nav ul#nav li {

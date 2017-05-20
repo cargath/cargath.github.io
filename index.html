@@ -12,11 +12,7 @@ title: cargath
     <div class="post content">
         {{ post.content }}
     </div>
-    {% if forloop.last == false %}
-        <p class="separator">♦︎</p>
-    {% else %}
-        <hr>
-    {% endif %}
+    <p class="separator">♦︎</p>
 {% endfor %}
 
 <!-- Pagination links -->

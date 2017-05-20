@@ -2,4 +2,4 @@ name: Carsten Könemann
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 paginate: 3
-paginate_path: "/blog/page:num/"
+paginate_path: "/page:num/"

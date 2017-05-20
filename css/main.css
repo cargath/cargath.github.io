@@ -4,8 +4,8 @@
 
 body {
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-    margin: 40px auto;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 0 10px;
     max-width: 800px;
 }
 
@@ -67,8 +67,11 @@ nav ul li, footer ul li {
 
 nav {
     color: #333;
-    border-bottom: 1px solid #d5d5d5;
-    margin-bottom: 40px;
+    margin-bottom: -40px;
+}
+
+nav ul {
+    margin-bottom: 14px;
 }
 
 nav ul#nav {
@@ -94,8 +97,7 @@ nav ul#ava li {
 
 footer {
     font-size: 0.75em;
-    border-top: 1px solid #d5d5d5;
-    margin-top: 40px;
+    margin-top: -40px;
 }
 
 footer ul.nav li {
@@ -161,11 +163,21 @@ div.post pre code {
     padding: 10px;
 }
 
+/*
+    Separators
+ */
+
+p.separator {
+    color: #666;
+    font-size: 2em;
+    margin: 40px 0;
+    text-align: center;
+}
+
 hr {
     border: 0;
     border-top: 1px solid #d5d5d5;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px -10px;
 }
 
 /*

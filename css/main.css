@@ -14,7 +14,7 @@ div.wrapper {
 
 div.container {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 736px;
     padding: 0 10px;
 }
 
@@ -96,16 +96,16 @@ nav ul {
 }
 
 nav ul#nav {
-    width: 66%;
+    width: 80%;
 }
 
 nav ul#ava {
-    width: 34%;
+    width: 20%;
 }
 
 nav ul#nav li {
     float: left;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 nav ul#ava li {

@@ -1,14 +1,26 @@
 ---
 layout: default
-title: cargath's Blog
+title: cargath
 ---
-<ul class="posts">
-    <p><br></p>
-    {% for post in site.posts %}
-        <li>
-            <p><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></p>
-            <p class="meta">{{ post.date | date_to_string }}</p>
-            <p><br></p>
-        </li>
-    {% endfor %}
-</ul>
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <p class="meta">
+        <span class="date">{{ post.date | date_to_string }}</span>
+    </p>
+    <div class="post content">
+        {{ post.content }}
+    </div>
+    <hr>
+{% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination">
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a> ---
+    {% endif %}
+        <span class="page_number ">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+        --- <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% endif %}
+</div>

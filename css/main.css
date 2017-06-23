@@ -2,14 +2,19 @@
     Generic HTML elements
  */
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-div.wrapper {
-    background-color: #f5f5f5;
+div.body {
+    min-height: 100%;
+    position: relative;
 }
 
 div.container {
@@ -196,7 +201,7 @@ p.separator {
 
 hr {
     border: 0;
-    border-top: 1px solid #fff;
+    border-top: 4px solid #f5f5f5;
     margin: 40px -10px;
 }
 
@@ -214,16 +219,20 @@ div.pagination {
     Smaller devices
  */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 756px) {
     h1 {
         font-size: 150%;
     }
-
+    
     h2 {
         font-size: 120%;
     }
-
+    
     ul.posts a {
         font-size: 120%;
+    }
+    
+    hr {
+        margin: 40px 10px;
     }
 }

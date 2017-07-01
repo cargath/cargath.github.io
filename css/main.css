@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -24,7 +24,7 @@ div.container {
 }
 
 h1 {
-    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-size: 200%;
     font-weight: 200;
     line-height: 1.5em;
@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-size: 150%;
     font-weight: 200;
     margin-top: 40px;
@@ -155,7 +155,7 @@ ul.posts li p {
 
 ul.posts a {
     color: #333;
-    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-weight: 200;
     font-size: 150%;
     line-height: 1.5em;

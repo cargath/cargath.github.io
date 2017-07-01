@@ -81,30 +81,30 @@ nav ul li, footer ul li {
     Navigation
  */
 
-nav {
+header {
+    width: 100%;
+    height: 128px;
+    text-align: center;
+    background: url(../img/avatar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: -30px;
+}
+
+header .nav {
+    position: relative;
+    line-height: 1.5em;
+    top: 100%;
+    transform: translateY(-100%);
+    background: rgba(255, 255, 255, 0.75);
+    padding: 4px;
+}
+
+header .nav a {
     color: #333;
-    margin-bottom: -40px;
-}
-
-nav ul {
-    margin-bottom: 14px;
-}
-
-nav ul#nav {
-    width: 80%;
-}
-
-nav ul#ava {
-    width: 20%;
-}
-
-nav ul#nav li {
-    float: left;
-    margin-right: 50px;
-}
-
-nav ul#ava li {
-    float: right;
 }
 
 /*
@@ -112,27 +112,15 @@ nav ul#ava li {
  */
 
 footer {
-    font-size: 80%;
-    margin-top: -40px;
+    font-size: 90%;
+    margin-top: -20px;
+    padding-bottom: 20px;
 }
 
-footer ul.nav {
+footer .nav, footer .by {
+    text-align: center;
     width: 100%;
-}
-
-footer ul.nav li {
-    float: left;
-    margin-left: 4px;
-    margin-right: 20px;
-}
-
-footer ul.by {
-    width: 100%;
-}
-
-footer ul.by li {
-    float: right;
-    margin-right: 4px;
+    margin-top: 20px;
 }
 
 /*

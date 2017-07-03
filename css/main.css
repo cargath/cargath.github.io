@@ -24,12 +24,17 @@ div.container {
 }
 
 h1 {
+    color: #333;
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-size: 200%;
-    font-weight: 200;
+    font-weight: 700;
     line-height: 1.5em;
     margin-bottom: 40px;
     margin-top: 40px;
+}
+
+h1 a {
+    color: #333;
 }
 
 h2 {
@@ -128,7 +133,7 @@ footer .nav, footer .by {
  */
 
 ul.posts {
-    margin: -28px 0;
+    margin: -64px 0;
     padding: 0;
 }
 
@@ -138,19 +143,6 @@ ul.posts li {
 
 ul.posts li p {
     color: #999;
-    margin: 10px auto;
-}
-
-ul.posts a {
-    color: #333;
-    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-    font-weight: 200;
-    font-size: 150%;
-    line-height: 1.5em;
-}
-
-ul.posts a:hover {
-    color: #A157E8;
 }
 
 /*
@@ -159,7 +151,9 @@ ul.posts a:hover {
 
 p.meta {
     color: #999;
+    font-size: 0.9rem;
     margin: -30px auto 40px;
+    text-transform: uppercase;
 }
 
 div.post ul li {
@@ -209,17 +203,13 @@ div.pagination {
 
 @media screen and (max-width: 756px) {
     h1 {
-        font-size: 150%;
+        font-size: 180%;
     }
-    
+
     h2 {
-        font-size: 120%;
+        font-size: 130%;
     }
-    
-    ul.posts a {
-        font-size: 120%;
-    }
-    
+
     hr {
         margin: 40px 10px;
     }

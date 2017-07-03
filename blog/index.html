@@ -6,9 +6,11 @@ title: cargath
     <p><br></p>
     {% for post in site.posts %}
         <li>
-            <p><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></p>
-            <p class="meta">{{ post.date | date_to_string }}</p>
-            <p><br></p>
+            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            <p class="meta">
+                <span class="date">{{ post.date | date_to_string }}</span>
+            </p>
         </li>
     {% endfor %}
+    <p><br></p>
 </ul>

@@ -123,9 +123,10 @@ footer {
 }
 
 footer .nav, footer .by {
+    color: #333;
+    margin-top: 20px;
     text-align: center;
     width: 100%;
-    margin-top: 20px;
 }
 
 /*

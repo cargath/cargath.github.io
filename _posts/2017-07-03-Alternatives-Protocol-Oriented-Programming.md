@@ -6,7 +6,7 @@ date: 2017-07-03
 
 We all know that [composition is better than inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance). Apple made a big push in this direction at WWDC15 by officially declaring protocols the next big paradigm in programming. If you haven't already seen it, go watch [Protocol-Oriented Programming in Swift](https://developer.apple.com/videos/wwdc/2015/?id=408), it's definitely worth your time.
 
-Like someone with a new hammer i immediatelly went trying to hit a particular nail, a problem that everyone trying to make a game for the first time has to deal with sooner or later: How to compose your game objects without duplicating code while avoiding deep inheritance hierarchies?
+Like someone with a new hammer i immediately went trying to hit a particular nail, a problem that everyone trying to make a game for the first time has to deal with sooner or later: How to compose your game objects without duplicating code while avoiding deep inheritance hierarchies?
 
 Consider the following example:
 

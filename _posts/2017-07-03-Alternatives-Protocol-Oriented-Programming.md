@@ -10,67 +10,71 @@ Like someone with a new hammer i immediately went trying to hit a particular nai
 
 Consider the following example:
 
-    protocol Bird { }
+```swift
+protocol Bird { }
 
-    protocol Flyable {
-        func fly()
+protocol Flyable {
+    func fly()
+}
+
+struct Penguin: Bird { }
+
+struct Eagle: Bird, Flyable {
+    func fly() {
+        print("huiii")
     }
+}
 
-    struct Penguin: Bird { }
+let birds: [Bird] = [Penguin(), Eagle()]
 
-    struct Eagle: Bird, Flyable {
-        func fly() {
-            print("huiii")
-        }
+for bird in birds {
+    if let bird = bird as? Flyable {
+        bird.fly()
     }
-
-    let birds: [Bird] = [Penguin(), Eagle()]
-
-    for bird in birds {
-        if let bird = bird as? Flyable {
-            bird.fly()
-        }
-    }
+}
+```
 
 This game has several birds a characters, some of which fly, some of which don't. We would like every flying bird to update its flying state. The problem: We only know the base class of our game objects, so we do a lot of typecasting, which feels like a workaround.
 
 Turns out the solution was another way of implementing composition: An Entity-Component architecture.
 
-    protocol Component {
-        func update()
-    }
+```swift
+protocol Component {
+    func update()
+}
 
-    struct Flying: Component {
-        func update() {
-            print("huiii")
+struct Flying: Component {
+    func update() {
+        print("huiii")
+    }
+}
+
+protocol Bird {
+    var components: [Component] { get }
+}
+
+extension Bird {
+    func updateAll() {
+        for component in components {
+            component.update()
         }
     }
+}
 
-    protocol Bird {
-        var components: [Component] { get }
-    }
+struct Penguin: Bird {
+    let components: [Component] = []
+}
 
-    extension Bird {
-        func updateAll() {
-            for component in components {
-                component.update()
-            }
-        }
-    }
+struct Eagle: Bird {
+    let components: [Component] = [Flying()]
+}
 
-    struct Penguin: Bird {
-        let components: [Component] = []
-    }
+let birds: [Bird] = [Penguin(), Eagle()]
 
-    struct Eagle: Bird {
-        let components: [Component] = [Flying()]
-    }
-
-    let birds: [Bird] = [Penguin(), Eagle()]
-
-    for bird in birds {
-        bird.updateAll()
-    }
+for bird in birds {
+    bird.updateAll()
+}
+```
 
 Apple actually provides [helper classes for this paradigm in GameplayKit](https://developer.apple.com/library/content/documentation/General/Conceptual/GameplayKit_Guide/EntityComponent.html#//apple_ref/doc/uid/TP40015172-CH6-SW1), also released at WWDC15. Although that [session](https://developer.apple.com/videos/play/wwdc2015/608/) got a lot less attention. At my day-job we used Entity-Component to [break up an AppDelegate](http://geme.github.io/swift/2016/04/28/Refactoring-AppDelegate.html), so this doesn't only apply to games 😉
 

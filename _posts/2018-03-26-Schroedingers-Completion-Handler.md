@@ -14,7 +14,7 @@ class URLSession {
 }
 ```
 
-This presents us with a problem, as it is not inherently clear how to interpret certain cases. What does it mean if you receive data, but also an error? What if you don't receiver either? There might be a joke about Heisenberg's uncertainty principle here that i will not even attempt to make.
+This presents us with a problem, as it is not inherently clear how to interpret certain cases. What does it mean if you receive data, but also an error? What if you don't receiver either?
 
 ## Error handling in Objective-C
 

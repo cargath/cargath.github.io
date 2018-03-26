@@ -4,7 +4,7 @@ title: "Schroedinger's completion handler"
 date: 2018-03-26
 ---
 
-As Ole Begemann points out in a new [blog post](https://oleb.net/blog/2018/03/making-illegal-states-unrepresentable/), the completion handler of Apple's URLSession has three parameters, all of which are optional:
+As Ole Begemann points out in a new [blog post](https://oleb.net/blog/2018/03/making-illegal-states-unrepresentable/), the completion handler of Apple's `URLSession` has three parameters, all of which are optional:
 
 ```swift
 class URLSession {
@@ -18,7 +18,7 @@ This presents us with a problem, as it is not inherently clear how to interpret 
 
 ## Error handling in Objective-C
 
-URLSession isn't the only class that does this, it's all over Foundation and UIKit. The underlying implementation of these frameworks is still Objective-C, and was designed around the languages weird way of dealing with errors. Functions take an NSError pointer as an inout parameter, which can be checked after the function returns. By convention, these functions also return a boolean value, indicating whether the NSError pointer needs to be checked. From Apple's [documentation](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/ErrorHandling/ErrorHandling.html):
+`URLSession` isn't the only class that does this, it's all over `Foundation` and `UIKit`. The underlying implementation of these frameworks is still Objective-C, and was designed around the languages weird way of dealing with errors. Functions take an `NSError` pointer as an inout parameter, which can be checked after the function returns. By convention, these functions also return a boolean value, indicating whether the `NSError` pointer needs to be checked. From Apple's [documentation](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/ErrorHandling/ErrorHandling.html):
 
 ```objc
 NSError *anyError;

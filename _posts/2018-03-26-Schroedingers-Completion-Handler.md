@@ -54,4 +54,4 @@ extension URLSession {
 }
 ```
 
-You could even go crazy and add more callbacks, if you want to other cases separately.
+You could even go crazy and add more callbacks, if you want to handle more cases separately.
